@@ -100,13 +100,14 @@ Open the Group Policy Management Editor and navigate to User Configuration > Pre
        style="width:80%;height:80%;display:block;margin:0 auto;" />
 </p>
 
-<p align="center"> Configure a new drive mapping by setting the action to Update, specifying the network share location (\\servername\folder), and assigning the drive letter D:.
+<p align="center"> Configure a new drive mapping by setting the action to Update, specifying the<br> network share location (\\servername\folder), and assigning the drive letter D:.
   <img src="./assets/images/assigning-drive.png" alt="Create new user"
        style="width:80%;height:80%;display:block;margin:0 auto;" />
 </p>
 
 <p align="center"> 
-Confirm that the new drive map entry is listed and enabled in the Drive Maps preference console.  <img src="./assets/images/assigned-drive.png" alt="Create new user"
+Confirm that the new drive map entry is listed and enabled in the Drive Maps preference console.  
+  <img src="./assets/images/assigned-drive.png" alt="Create new user"
        style="width:80%;height:80%;display:block;margin:0 auto;" />
 </p>
 
@@ -126,7 +127,7 @@ Create a new Group Policy Object named "Restrict Control Panel" in the Group Pol
 </p>
 
 <p align="center">
-Navigate to User Configuration > Policies > Administrative Templates > Control Panel and locate the Prohibit access to Control Panel and PC settings policy setting.
+Navigate to User Configuration > Policies > Administrative Templates > Control Panel and <br>locate the Prohibit access to Control Panel and PC settings policy setting.
   <img src="./assets/images/access-restricting.png" alt="Create new user"
        style="width:80%;height:80%;display:block;margin:0 auto;" />
 </p>
@@ -139,7 +140,7 @@ Navigate to User Configuration > Policies > Administrative Templates > Control P
 ## Testing & Implementing
 
 <p align="center"> 
-Attempt to open Control Panel or Settings on the user desktop to verify that the restriction prompt appears, confirming successful enforcement.
+Attempt to open Control Panel or Settings on the user desktop to <br>verify that the restriction prompt appears, confirming successful enforcement.
   <img src="./assets/images/Testing-Restrict-Control-Panel.png" alt="Create new user"
        style="width:80%;height:80%;display:block;margin:0 auto;" />
 </p>
