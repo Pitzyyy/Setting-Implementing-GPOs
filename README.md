@@ -112,34 +112,92 @@ Confirm that the new drive map entry is listed and enabled in the Drive Maps pre
 
 # 
 
-## Active Directory - 
+## Active Directory - Restrict Access to Control Panel
 ### Description
 
-An Active Directory homelab exercise demonstrating how to automatically map network drives to domain users using Group Policy Preferences. This lab covers creating a custom GPO for Drive Mapping, navigating to User Configuration preferences, configuring a new mapped drive path using UNC notation, assigning drive letters, and verifying the mapped drive configuration.
+An Active Directory homelab exercise demonstrating how to restrict access to Control Panel and PC Settings for domain users using Group Policy Objects (GPOs). This lab covers creating a custom GPO, navigating Administrative Templates to enable access prohibitions, and verifying policy enforcement on a client workstation.
 
 ## Lab walk-through
 
 <p align="center">
-Create a new Group Policy Object named "Drive Mapping" within the Group Policy Management console.
-  <img src="./assets/images/create-gpo-drive-mapping.png" alt="Create new user"
+Create a new Group Policy Object named "Restrict Control Panel" in the Group Policy Management console.
+  <img src="./assets/images/creating-gpo.png" alt="Create new user"
        style="width:80%;height:80%;display:block;margin:0 auto;" />
 </p>
 
 <p align="center">
-Open the Group Policy Management Editor and navigate to User Configuration > Preferences > Windows Settings > Drive Maps.
-  <img src="./assets/images/drive-mapping.png" alt="Create new user"
+Navigate to User Configuration > Policies > Administrative Templates > Control Panel and locate the Prohibit access to Control Panel and PC settings policy setting.
+  <img src="./assets/images/access-restricting.png" alt="Create new user"
        style="width:80%;height:80%;display:block;margin:0 auto;" />
 </p>
 
-<p align="center"> Configure a new drive mapping by setting the action to Update, specifying the network share location (\\servername\folder), and assigning the drive letter D:.
-  <img src="./assets/images/assigning-drive.png" alt="Create new user"
+<p align="center"> Open the policy properties window and set the policy state to Enabled to disable access to Control.exe and SystemSettings.exe.
+  <img src="./assets/images/enabling-restriction.png" alt="Create new user"
        style="width:80%;height:80%;display:block;margin:0 auto;" />
 </p>
+
+## Testing & Implementing
 
 <p align="center"> 
-Confirm that the new drive map entry is listed and enabled in the Drive Maps preference console.  <img src="./assets/images/assigned-drive.png" alt="Create new user"
+Attempt to open Control Panel or Settings on the user desktop to verify that the restriction prompt appears, confirming successful enforcement.
+  <img src="./assets/images/Testing-Restrict-Control-Panel.png" alt="Create new user"
        style="width:80%;height:80%;display:block;margin:0 auto;" />
 </p>
+
+# 
+
+## Active Directory - Desktop Wallpaper
+### Description
+
+An Active Directory homelab exercise demonstrating how to enforce a standardized desktop background across domain environments using Group Policy Objects. This lab covers creating a dedicated wallpaper policy GPO, locating the desktop background settings, and enabling uniform wallpaper enforcement.
+
+## Lab walk-through
+
+<p align="center">
+Create a new Group Policy Object named "Desktop Wallpaper" within the Group Policy Management console.
+  <img src="./assets/images/creating-gpo2.png" alt="Create new user"
+       style="width:80%;height:80%;display:block;margin:0 auto;" />
+</p>
+
+<p align="center">
+Open the Group Policy Management Editor and navigate to User Configuration > Policies > Administrative Templates > Desktop > Desktop, then select the Desktop Wallpaper policy.
+  <img src="./assets/images/setting-desktop-wallpaper.png" alt="Create new user"
+       style="width:80%;height:80%;display:block;margin:0 auto;" />
+</p>
+
+<p align="center"> Open the Desktop Wallpaper properties window, set the policy status to Enabled, and specify the wallpaper path and style options.
+  <img src="./assets/images/enabling-desktop-wallpaper.png" alt="Create new user"
+       style="width:80%;height:80%;display:block;margin:0 auto;" />
+</p>
+
+
+# 
+
+## Active Directory - Restricting Removable Storage Access GPO
+### Description
+
+An Active Directory homelab exercise demonstrating how to secure domain endpoints by restricting access to removable storage devices using Group Policy Objects. This lab covers locating system storage policies and enforcing complete access denial across all removable storage classes.
+## Lab walk-through
+
+<p align="center">
+Create a new Group Policy Object named "" within the Group Policy Management console.
+  <img src="./assets/images/creating-gpo2.png" alt="Create new user"
+       style="width:80%;height:80%;display:block;margin:0 auto;" />
+</p>
+
+<p align="center">
+Navigate to Computer Configuration > Policies > Administrative Templates > System > Removable Storage Access in the Group Policy Management Editor and select All Removable Storage classes: Deny all access.
+  <img src="./assets/images/enabling-to-deny-access.png" alt="Create new user"
+       style="width:80%;height:80%;display:block;margin:0 auto;" />
+</p>
+
+<p align="center"> Open the policy configuration dialog and set the state to Enabled to block read, write, and execute permissions across all removable drives.
+  <img src="./assets/images/enabling-deny-access.png" alt="Create new user"
+       style="width:80%;height:80%;display:block;margin:0 auto;" />
+</p>
+
+# 
+
 
 
 
