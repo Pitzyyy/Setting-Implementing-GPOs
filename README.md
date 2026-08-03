@@ -11,7 +11,7 @@ An Active Directory homelab exercise demonstrating how to configure, deploy, and
 
 ## 
 
-## Active Directory - Password Policy
+## 1. Active Directory - Password Policy
 ### Description
 
 An Active Directory homelab exercise demonstrating how to configure and enforce Domain Password Policies using Group Policy Objects (GPOs). This lab covers creating a new custom GPO, 
@@ -81,7 +81,7 @@ Create a new Group Policy Object named "Password Policy" in the domain.
 
 # 
 
-## Active Directory - Drive mapping
+## 2. Active Directory - Drive mapping
 ### Description
 
 An Active Directory homelab exercise demonstrating how to automatically map network drives to domain users using Group Policy Preferences. This lab covers creating a custom GPO for Drive Mapping, navigating to User Configuration preferences, configuring a new mapped drive path using UNC notation, assigning drive letters, and verifying the mapped drive configuration.
@@ -112,7 +112,7 @@ Confirm that the new drive map entry is listed and enabled in the Drive Maps pre
 
 # 
 
-## Active Directory - Restrict Access to Control Panel
+## 3. Active Directory - Restrict Access to Control Panel
 ### Description
 
 An Active Directory homelab exercise demonstrating how to restrict access to Control Panel and PC Settings for domain users using Group Policy Objects (GPOs). This lab covers creating a custom GPO, navigating Administrative Templates to enable access prohibitions, and verifying policy enforcement on a client workstation.
@@ -146,7 +146,7 @@ Attempt to open Control Panel or Settings on the user desktop to verify that the
 
 # 
 
-## Active Directory - Desktop Wallpaper
+## 4. Active Directory - Desktop Wallpaper
 ### Description
 
 An Active Directory homelab exercise demonstrating how to enforce a standardized desktop background across domain environments using Group Policy Objects. This lab covers creating a dedicated wallpaper policy GPO, locating the desktop background settings, and enabling uniform wallpaper enforcement.
@@ -173,7 +173,7 @@ Open the Group Policy Management Editor and navigate to User Configuration > Pol
 
 # 
 
-## Active Directory - Restricting Removable Storage Access GPO
+## 5.Active Directory - Restricting Removable Storage Access GPO
 ### Description
 
 An Active Directory homelab exercise demonstrating how to secure domain endpoints by restricting access to removable storage devices using Group Policy Objects. This lab covers locating system storage policies and enforcing complete access denial across all removable storage classes.
