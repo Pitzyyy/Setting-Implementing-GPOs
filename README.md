@@ -66,7 +66,7 @@ Create a new Group Policy Object named "Password Policy" in the domain.
        style="width:80%;height:80%;display:block;margin:0 auto;" />
 </p>
 
-# Testing & Implementing
+## Testing & Implementing
 
 
 <p align="center"> Executed gpupdate /force on client workstations via Command Prompt / PowerShell to pull updated GPOs immediately.
@@ -78,6 +78,72 @@ Create a new Group Policy Object named "Password Policy" in the domain.
   <img src="./assets/images/pass-policy-testing.PNG" alt="Create new user"
        style="width:80%;height:80%;display:block;margin:0 auto;" />
 </p>
+
+# 
+
+## Active Directory - Drive mapping
+### Description
+
+An Active Directory homelab exercise demonstrating how to automatically map network drives to domain users using Group Policy Preferences. This lab covers creating a custom GPO for Drive Mapping, navigating to User Configuration preferences, configuring a new mapped drive path using UNC notation, assigning drive letters, and verifying the mapped drive configuration.
+
+## Lab walk-through
+
+<p align="center">
+Create a new Group Policy Object named "Drive Mapping" within the Group Policy Management console.
+  <img src="./assets/images/create-gpo-drive-mapping.png" alt="Create new user"
+       style="width:80%;height:80%;display:block;margin:0 auto;" />
+</p>
+
+<p align="center">
+Open the Group Policy Management Editor and navigate to User Configuration > Preferences > Windows Settings > Drive Maps.
+  <img src="./assets/images/drive-mapping.png" alt="Create new user"
+       style="width:80%;height:80%;display:block;margin:0 auto;" />
+</p>
+
+<p align="center"> Configure a new drive mapping by setting the action to Update, specifying the network share location (\\servername\folder), and assigning the drive letter D:.
+  <img src="./assets/images/assigning-drive.png" alt="Create new user"
+       style="width:80%;height:80%;display:block;margin:0 auto;" />
+</p>
+
+<p align="center"> 
+Confirm that the new drive map entry is listed and enabled in the Drive Maps preference console.  <img src="./assets/images/assigned-drive.png" alt="Create new user"
+       style="width:80%;height:80%;display:block;margin:0 auto;" />
+</p>
+
+# 
+
+## Active Directory - 
+### Description
+
+An Active Directory homelab exercise demonstrating how to automatically map network drives to domain users using Group Policy Preferences. This lab covers creating a custom GPO for Drive Mapping, navigating to User Configuration preferences, configuring a new mapped drive path using UNC notation, assigning drive letters, and verifying the mapped drive configuration.
+
+## Lab walk-through
+
+<p align="center">
+Create a new Group Policy Object named "Drive Mapping" within the Group Policy Management console.
+  <img src="./assets/images/create-gpo-drive-mapping.png" alt="Create new user"
+       style="width:80%;height:80%;display:block;margin:0 auto;" />
+</p>
+
+<p align="center">
+Open the Group Policy Management Editor and navigate to User Configuration > Preferences > Windows Settings > Drive Maps.
+  <img src="./assets/images/drive-mapping.png" alt="Create new user"
+       style="width:80%;height:80%;display:block;margin:0 auto;" />
+</p>
+
+<p align="center"> Configure a new drive mapping by setting the action to Update, specifying the network share location (\\servername\folder), and assigning the drive letter D:.
+  <img src="./assets/images/assigning-drive.png" alt="Create new user"
+       style="width:80%;height:80%;display:block;margin:0 auto;" />
+</p>
+
+<p align="center"> 
+Confirm that the new drive map entry is listed and enabled in the Drive Maps preference console.  <img src="./assets/images/assigned-drive.png" alt="Create new user"
+       style="width:80%;height:80%;display:block;margin:0 auto;" />
+</p>
+
+
+
+
 
 
 
