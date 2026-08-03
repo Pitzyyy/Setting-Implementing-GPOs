@@ -181,7 +181,7 @@ An Active Directory homelab exercise demonstrating how to secure domain endpoint
 
 <p align="center">
 Create a new Group Policy Object named "" within the Group Policy Management console.
-  <img src="./assets/images/creating-gpo2.png" alt="Create new user"
+  <img src="./assets/images/disable-usb.png" alt="Create new user"
        style="width:80%;height:80%;display:block;margin:0 auto;" />
 </p>
 
@@ -192,7 +192,7 @@ Navigate to Computer Configuration > Policies > Administrative Templates > Syste
 </p>
 
 <p align="center"> Open the policy configuration dialog and set the state to Enabled to block read, write, and execute permissions across all removable drives.
-  <img src="./assets/images/enabling-deny-access.png" alt="Create new user"
+  <img src="./assets/images/enable-deny-access.png" alt="Create new user"
        style="width:80%;height:80%;display:block;margin:0 auto;" />
 </p>
 
