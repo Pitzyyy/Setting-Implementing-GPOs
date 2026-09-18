@@ -181,7 +181,7 @@ An Active Directory homelab exercise demonstrating how to secure domain endpoint
 ## Lab walk-through
 
 <p align="center">
-Create a new Group Policy Object named "Restricting Removable Storage Access" within the Group Policy Management console.
+Create a new Group Policy Object named "Disable USB Storage" within the Group Policy Management console.
   <img src="./assets/images/disable-usb.PNG" alt="Create new user"
        style="width:80%;height:80%;display:block;margin:0 auto;" />
 </p>
